@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 from torch.autograd import Variable
 from torchvision import transforms
 
-from Network import Net
+from hamiltonian.Network import Net
 from Visualisation.Utility import FeatureExtractor
 
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     model.load_state_dict(torch.load('results/model.pth'))
     model = FeatureExtractor(model, 2)
     for i in range(8):
-        img = cv2.imread('Visualisation/testSample/img_4.jpg')
+        img = cv2.imread('testSample/img_4.jpg')
         img = Image.fromarray(img).convert('L')  # img as opencv
         img = np.array(img)
         img = transform(img)

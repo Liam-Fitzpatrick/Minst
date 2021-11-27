@@ -1,11 +1,9 @@
 import torch
-import torch.optim as optim
 
-from Network import Net
-from FashionMNIST_data import train_loader, test_loader
+from hamiltonian.Network import Net
+from Datasets.FashionMNIST_data import train_loader, test_loader
 from Test import test
-from Train import gradient_train
-from Display import plot_loss, plot_prediction_sample
+from Visualisation.Display import plot_prediction_sample
 
 n_epochs = 1
 learning_rate = 0.01

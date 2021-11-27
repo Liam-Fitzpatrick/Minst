@@ -1,6 +1,5 @@
-from Network import Net
+from hamiltonian.Network import Net
 import torch
-from matplotlib import pyplot as plt
 
 import numpy as np
 import matplotlib.pyplot as plt

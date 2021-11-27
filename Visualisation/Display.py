@@ -1,7 +1,7 @@
 import torch
 from matplotlib import pyplot as plt
 
-from FashionMNIST_data import ClassLabels
+from Datasets.FashionMNIST_data import ClassLabels
 
 
 def plot_sample(loader):

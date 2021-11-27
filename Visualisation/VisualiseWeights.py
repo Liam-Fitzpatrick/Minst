@@ -2,16 +2,13 @@ import cv2
 import torch
 import matplotlib.pyplot as plt
 import numpy as np
-import torch.nn as nn
-import cv2 as cv
-import argparse
 
 from PIL import Image
-from torchvision import models, transforms
+from torchvision import transforms
 
-from Network import Net
+from hamiltonian.Network import Net
 
-from Visualisation.Utility import get_features, FeatureExtractor
+from Visualisation.Utility import FeatureExtractor
 
 if __name__ == '__main__':
 
