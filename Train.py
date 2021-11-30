@@ -7,6 +7,9 @@ def gradient_train(epoch, network, data_loader, optimiser, log_interval=10):
     train_losses = []
     train_counter = []
     for batch_idx, (data, target) in enumerate(data_loader):
+        if torch.cuda.is_available():
+            data, target = data.cuda(), target.cuda()
+
         optimiser.zero_grad()
         output = network(data)
         loss = F.nll_loss(output, target)
